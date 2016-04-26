@@ -12,5 +12,20 @@ class rS {
 	vector <string> nativeAmericanStereotypes;
 	vector <string> latinoStereotypes;
 	vector <string> africanAmericanStereotypes;
-	vector <string> genPOCStereotypes;
+	//vector <string> genPOCStereotypes;
+	vector <string> foundIdentifiers;
+	vector <string> foundStereotypes;
+
+	//rewrite input file
+	void inputFile(ifstream& fin, string File_Name, vector <string>& words);
+	void setRacialIdentifiers();
+	void setMEMStereotypes();
+	void setNAStereotypes();
+	void setLStereotypes();
+	void setAAStereotypes();
+	//void setGPOCStereotypes();
+	void setFoundIndentifiers();
+	void setFoundStereotypes();
+	bool inList(string Word, vector <string>& List);
+	
 };
